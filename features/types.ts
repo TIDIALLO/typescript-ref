@@ -1,7 +1,7 @@
-const today = new Date();
+const Today = new Date();
 
 console.log(today.getMonth());
 
-const person =  {
+const Person =  {
     age: 20
 }

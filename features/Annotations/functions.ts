@@ -38,3 +38,9 @@ const logWeather = (forecast: { date: Date, weather: string }): void => {
     console.log(forecast.date);
     console.log(forecast.weather);
 }
+
+let greeting:(name:string) => string;
+
+greeting = function(name:string){
+     return `Hi ${name}`;
+}

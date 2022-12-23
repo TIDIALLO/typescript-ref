@@ -15,7 +15,7 @@ let myNumbers: number[] = [1, 2, 3]
 class Car {
 
 }
-let car: Car = new Car();
+let car1: Car = new Car();
 
 //object litteral
 let point: { x: number, y: number; } = {
@@ -32,7 +32,7 @@ const logNumber: (x: number) => void = (x: number) => {
 // ---1) Function that returns the any type
 const json = '{"x":10, "y": 20}';
 const coordonates: { x: number, y: number } = JSON.parse(json);
-console.log(coordonates); //{ x: 10, y: 20 }
+console.log("coordonates: ",coordonates); //{ x: 10, y: 20 }
 
 // 2 when we declare a variable on one line 
 // and initialize it later
@@ -45,7 +45,7 @@ for (let i = 0; i < words.length; i++) {
     console.log(foundWord);
 }
 
-// 3 variable whose type canot be inferred  correctly
+// 3 variable whose type can not be inferred  correctly
 let numbers = [-10, -1, 12]
 let numberAboveZero: boolean | number = false;
 for (let i = 0; i < numbers.length; i++) {
