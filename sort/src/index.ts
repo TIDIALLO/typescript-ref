@@ -1,7 +1,23 @@
-console.log('Bonour le monde');
+class Sorter{
+    constructor(public collection: number[]){};
 
-const DoSomething = () =>{
-    console.log("Diallo Tidiane")
-};
+    sort(): void{
+        const {length} = this.collection;
 
-DoSomething();
+        for(let i = 0; i < length; i++){
+            for(let j = 0; j < length - i - 1; j++){
+                if(this.collection[j] > this.collection[j + 1]){
+                    const temp = this.collection[j];
+                    this.collection[j] = this.collection[j + 1];
+                    this.collection[j + 1] = temp;
+                    break;
+                }
+            }
+        }
+    }
+}
+
+const sorter = new Sorter([5, 4, 3, 2, 1]);
+sorter.sort();
+
+console.log(sorter.collection);
