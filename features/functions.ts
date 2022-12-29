@@ -4,7 +4,7 @@
 //     isBroken: boolean,
 //     summary(): string ;
 // }
-interface Reportable{
+interface Reportable {
     summary(): string;
 }
 
@@ -18,11 +18,11 @@ const oldCivic = {
 };
 
 const drink = {
-    color : 'brown',
+    color: 'brown',
     corbonated: true,
     sugar: 40,
-    summary(): string{
-        return `My drink has ${this.sugar} grams of sugar` ;
+    summary(): string {
+        return `My drink has ${this.sugar} grams of sugar`;
     }
 }
 
@@ -36,7 +36,7 @@ const drink = {
 // const printVehicule = (vehicule: Vehicule): void => {
 //     console.log(vehicule.summary());
 // }
-const printSummary= (item: Reportable): void => {
+const printSummary = (item: Reportable): void => {
     console.log(item.summary());
 }
 printSummary(oldCivic);
